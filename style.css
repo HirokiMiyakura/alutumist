@@ -1,0 +1,729 @@
+/*
+	Theme Name: GAKS_THEME
+	Theme URI: http://html5blank.com
+	Description: GAKS WordPress Theme
+	Version: 1.0.0
+	Author: HIROKI MIYAKURA
+	Author URI: https://miyakura.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size: 16px;
+	/* font-size: 62.5%; */
+}
+body {
+	font-family: serif;
+	color:#444;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+/* italianno-regular - latin */
+@font-face {
+  font-family: 'Italianno';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/italianno-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Italianno'), local('Italianno-Regular'),
+       url('./fonts/italianno-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/italianno-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/italianno-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/italianno-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/italianno-v9-latin-regular.svg#Italianno') format('svg'); /* Legacy iOS */
+}
+
+/* ここから */
+
+h1 {
+  font-size: 1.4rem;
+	letter-spacing: 2px;
+	font-family: 'Italianno';
+}
+
+h2 {
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+	margin: 1.5em 0;
+	font-family: 'Italianno';
+}
+
+h3 {
+	font-size: 1.1rem;
+	letter-spacing: 2px;
+	margin: 1.5em 0;
+}
+
+h4 {
+	font-size: 1em;
+	letter-spacing: 2px;
+	margin: 1.5rem 0;
+}
+
+p,
+li,
+th,
+td {
+	font-size: 1rem;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.under-border {
+	/* border-bottom: 2px solid #1d2b49; */
+	/* background:linear-gradient(transparent 70%, #1d2b49 0%); */
+	background:linear-gradient(transparent 70%, orange 0%);
+}
+
+.centering {
+	text-align: center;
+}
+
+/* #SERVICE,
+#MODELS,
+#STORY,
+#FOUNDERS,
+#CONTACT {
+	margin-top: -120px;
+  padding-top: 120px;
+} */
+
+header {
+	/* background-color: #1d2b49; */
+	background: url('./img/header/BG_mysterious.jpg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	padding-bottom: 51%;
+
+}
+
+.logo-outer {
+	/* background-color: #1d2b49; */
+	background-color: rgba(29,43,73, 1);
+}
+
+.logo {
+	text-align: center;
+	margin: 0 auto;
+	/* width: 14vw; */
+	width: 20vw;
+}
+
+.nav {
+	width: 100%;
+	background-color: rgba(29,43,73, 1);
+	/* padding: .6rem 0 1.5rem 0; */
+}
+
+.mainNavigationContainer {
+	width: 1080px;
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.mainNavigationItem {
+	/* margin-top: auto; */
+	/* margin-top: 3.5rem; */
+	position: relative;
+	text-align: center;
+	/* width: 16.6%; */
+	width: 13%;
+}
+
+.mainNavigationItem.logo {
+	width: 22%;
+	margin-top: 0;
+}
+
+.mainNavigationItem a {
+	color: #fff;
+	font-size: 1.85em;
+	font-weight: normal;
+	letter-spacing: 2px;
+	font-family: 'Italianno';
+}
+
+.mainNavigationItem a span {
+	font-size: .5em;
+	font-weight: bold;
+	position: absolute;
+	font-family: serif;
+	color: #a86f49;
+	width: 100%;
+	right: 0;
+	left: 0;
+	margin: auto;
+	bottom: -1.3rem;
+}
+
+.mainNavigationItem a span::before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+.is-fixed {
+	/* height: 85px; */
+	height: 120px;
+	line-height: 30px;
+	padding-top: .9em!important;
+	/* padding: .6em 0 .4em 0; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+	background-color: rgba(29, 43, 73, 1)!important;
+	font-size: 1rem;
+}
+
+.nav.is-fixed .mainNavigationItem {
+	margin-top: 0;
+	width: 14.2%;
+}
+
+.nav.is-fixed .mainNavigationItem a span {
+	bottom: -1.75rem;
+}
+
+/* スマホメニュー */
+
+/* /スマホメニュー */
+
+section {
+	position: relative;
+	height: 100vh;
+}
+
+main {
+	margin-top: 0!important;
+}
+
+.inner {
+	max-width: 1080px;
+	margin: 0 auto;
+	/* padding: 3em 0; */
+	padding-top: 120px;
+}
+
+section h2 {
+	position: relative;
+	text-align: center;
+	margin: 0 auto 3rem  auto;
+	/* font-size: 3.75em; */
+	font-size: 0;
+	font-weight: normal;
+	color: #1d2b49;
+}
+
+section h2 span {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: -1rem;
+	font-size: .3em;
+	font-family: serif;
+	color: #a86f49;
+}
+
+section h2 span::before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+#MESSAGE {
+	/* background: url('./img/header/BG_mysterious.jpg') no-repeat; */
+	/* background-size: contain; */
+	/* max-height: 400px; */
+}
+
+#MESSAGE ul {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+}
+
+#MESSAGE ul li {
+	width: 25%;
+}
+
+#MESSAGE ul li img {
+	/* width: auto; */
+	/* height: 200px; */
+}
+
+.ao {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.ao img {
+	max-height: 400px;
+}
+
+.aka {
+	position: absolute;
+	right: 15vw;
+	bottom: 0;
+	margin: auto;
+	text-align: right;
+}
+
+.aka img {
+	max-height: 350px;
+}
+
+.kiiro {
+	position: absolute;
+	bottom: 0;
+	left: 15vw;
+	text-align: left;
+}
+
+.kiiro img {
+	max-height: 320px;
+}
+
+#border-bottom {
+	/* margin-top: -100px; */
+}
+
+/* SERVICE */
+
+#SERVICE {
+}
+
+.service-title {
+	font-size: 1.5rem;
+}
+
+.outer {
+	/*position: absolute;
+	width: 100vw;
+	height: 50vw;
+	top: 60px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;*/
+	height: 100vh;
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#SERVICE ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#SERVICE ul li {
+	text-align: center;
+}
+
+.featuresContainer {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 6em 0;
+}
+
+.featuresItem h3 {
+	font-size: 1.75em;
+	letter-spacing: 4px;
+}
+
+.featuresItem ul {
+}
+
+.featuresOuter {
+	/* width: 70vw; */
+	margin: 0 auto;
+}
+
+/* MODELS */
+
+#MODELS {
+	background-color: #000;
+	color: #fff;
+}
+
+#MODELS h2 {
+	color: #fff;
+}
+
+#MODELS h3 {
+	text-align: center;
+}
+
+.modelsContainer {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: baseline;
+	margin: 0 auto;
+}
+
+.modelsItem {
+	width: 50%;
+	padding: 2em;
+}
+
+.model-image {
+	text-align: center;
+}
+
+.modelsItem ul {
+	margin-left: 2em;
+}
+
+/* STORY */
+
+#STORY {
+}
+
+#STORY h3 {
+	margin-bottom: .5rem;
+}
+
+/* FOUNDERS */
+
+#FOUNDERS {
+	background-color: #eee;
+}
+
+.foundersContainer {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.founderItem {
+	padding: 2em;
+}
+
+.founder-image {
+	text-align: center;
+}
+
+#FOUNDERS h3 {
+	margin: 1em auto;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/* CONTACT */
+
+#CONTACT {
+	line-height: 2;
+}
+
+.altumist-contact-table {
+	width: 100%;
+}
+
+.wpcf7 {
+	padding: 2em!important;
+	background-color: #fff;
+}
+
+.wpcf7-list-item.first.last {
+	display: flex;
+}
+
+span.wpcf7-list-item {
+	margin: 0 0 1em 0;
+}
+
+.wpcf7-list-item {
+	display: flex;
+}
+
+button, input, select, textarea {
+	width: 100%;
+	padding: 5px;
+	margin: 10px 0;
+	border: 1px solid silver;
+	font-size: 1em;
+}
+
+input[type=checkbox] {
+	width: 15px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+	background-color: #1d2b49;
+	color: #fff;
+	font-weight: bold;
+}
+
+.footer {
+	margin: 2em auto;
+	text-align: center;
+}
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media all and (max-width: 1080px) {
+
+	section {
+		/* padding: 1em .5em 2em .5em; */
+		padding: 0;
+		height: auto;
+	}
+
+	section h2 {
+		margin: 0;
+		padding: .5em 0;
+	}
+
+	section h2 span {
+		bottom: 0;
+	}
+
+	.outer {
+		position: static;
+		height: 100%;
+	}
+
+	.inner {
+		padding: 0 25px;
+	}
+
+	.mainNavigationItem a {
+		font-size: 1em;
+	}
+
+	#SERVICE ul {
+		margin-left: 0;
+	}
+
+	.modelsContainer {
+		display: block;
+	}
+
+	.modelsItem {
+		width: 100%;
+	}
+
+	.foundersContainer {
+		display: block;
+	}
+
+	.founderItem {
+		width: 100%;
+	}
+
+	.altumist-contact-table th,
+	.altumist-contact-table td {
+		display: block;
+		width: 100%;
+	}
+
+}
+
+@media all and (max-width: 768px) {
+
+	.pc-br {
+		display: none;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.inner {
+		padding: 30px 10px;
+	}
+
+	.centering {
+		text-align: left;
+	}
+
+	header {
+		/* background: url('./img/header/drink_photo_3.jpg') no-repeat;
+		background-size: contain;
+		padding-bottom: 30%;
+		height: auto; */
+
+		height: auto;
+		background: none;
+		padding-bottom: 0;
+	}
+
+	.logo {
+		width: 40vw;
+	}
+
+	.ao,
+	.kiiro,
+	.aka {
+		display: none;
+	}
+
+	section h2 {
+		font-size: 4rem;
+		padding-top: 0;
+	}
+
+	section h2 span {
+		bottom: 1rem;
+	}
+
+	.service-title {
+		font-size: 1.2rem;
+	}
+
+	#MESSAGE {
+		display: none;
+	}
+
+	#SERVICE ul li {
+		text-align: left;
+	}
+
+	.modelsItem {
+		padding: 2rem 0;
+	}
+
+	.founderItem {
+		padding: 2rem 0;
+	}
+
+	.wpcf7 {
+		padding: 2rem 0!important;
+	}
+
+}
+
+@media all and (min-width: 768px) {
+	.logo-outer {
+		display: none;
+	}
+	.sp-mv {
+		display: none;
+	}
+	.NavMenu {
+		display: none;
+	}
+}
