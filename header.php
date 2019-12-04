@@ -126,7 +126,9 @@
 <script>
 ityped.init(document.querySelector("#ityped"), {
   showCursor: false,
-  strings: ['Very nice project!', 'Yeah!', 'Shure, awesome!']
+	disableBackTyping: true,
+  strings: [`Never say 'NO' to adventures. Always say 'YES,' otherwise you'll lead a very dull life.
+ Ian Fleming`]
 })
 ityped.init("#placeholder", {
   placeholder: true,

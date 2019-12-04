@@ -556,6 +556,10 @@ input.wpcf7-form-control.wpcf7-submit {
 	text-align: center;
 }
 
+#ityped {
+	color: white;
+}
+
 .ityped-cursor {
     font-size: 2.2rem;
     opacity: 1;
