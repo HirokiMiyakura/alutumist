@@ -39,7 +39,14 @@ jQuery(function($){
 	  });
 	});
 
-  // $.scrollify({section:".box"});
+	// $(function(){
+	// 	// var $win = $(window)
+	// 	var $win = getScreenSize();
+	// 	console.log($win)
+	// 	if ($win < 768) {
+	// 	  $.scrollify({section:".box"});
+	// 	}
+	// });
 
 	// 今いる場所をゴールドにする
 	$(function(){
@@ -96,9 +103,6 @@ jQuery(function($){
 		});
 
 		// 固定ヘッダーの分ページ内リンク場所を変更する
-
-
-
 
 });
 

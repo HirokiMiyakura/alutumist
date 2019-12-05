@@ -556,8 +556,19 @@ input.wpcf7-form-control.wpcf7-submit {
 	text-align: center;
 }
 
-#ityped {
-	color: white;
+.ityped-outer {
+	letter-spacing: 2px;
+	font-size: 2.75rem;
+	color: #a86f49;
+	padding-bottom: 1rem;
+	/* position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto; */
+	text-align: center;
+	font-family: 'italianno'
 }
 
 .ityped-cursor {
@@ -631,11 +642,12 @@ input.wpcf7-form-control.wpcf7-submit {
 	}
 
 	.foundersContainer {
-		display: block;
+		/* display: block; */
 	}
 
 	.founderItem {
-		width: 100%;
+		/* width: 100%; */
+		width: 45%;
 	}
 
 	.altumist-contact-table th,
@@ -665,14 +677,17 @@ input.wpcf7-form-control.wpcf7-submit {
 	}
 
 	header {
-		/* background: url('./img/header/drink_photo_3.jpg') no-repeat;
-		background-size: contain;
-		padding-bottom: 30%;
-		height: auto; */
-
+		/* background: url('./img/header/drink_photo_3.jpg') no-repeat; */
+		background: url('./img/header/sp-mv.jpg') no-repeat;
+		/* background-size: contain; */
+		background-size: cover;
+		background-position: center center;
+		/* padding-bottom: 30%; */
+		height: 100vh;
+/*
 		height: auto;
 		background: none;
-		padding-bottom: 0;
+		padding-bottom: 0; */
 	}
 
 	.logo {
@@ -682,6 +697,10 @@ input.wpcf7-form-control.wpcf7-submit {
 	.ao,
 	.kiiro,
 	.aka {
+		display: none;
+	}
+
+	.ityped-outer {
 		display: none;
 	}
 
