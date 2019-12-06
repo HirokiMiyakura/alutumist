@@ -36,7 +36,7 @@
 					<!-- /logo -->
 
 					<!-- sp-mv -->
-					<p class="sp-mv"><img src="<?php echo get_template_directory_uri(); ?>/img/header/drink_photo_3.jpg" alt="スマホ用MV"></p>
+					<!-- <p class="sp-mv"><img src="<?php echo get_template_directory_uri(); ?>/img/header/drink_photo_3.png" alt="スマホ用MV"></p> -->
 					<!-- /sp-mv -->
 
 					<!-- nav -->
@@ -90,7 +90,6 @@
 					<!-- /nav_sp -->
 
 					<div id="MESSAGE">
-						<span id="ityped" class="ityped"></span>
 						<div class="inner">
 						<!-- <p class="centering"> -->
 							<!-- <img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/header/BG_mysterious.jpg" alt="" /> -->
@@ -120,18 +119,27 @@
 					</div>
 					<div id="border-bottom"></div>
 				</div>
+				<div class="ityped-outer">
+					<span id="ityped1" class="ityped"></span>
+				</div>
+				<div class="ityped-outer">
+					<span id="ityped2" class="ityped"></span>
+				</div>
 			</header>
 			<!-- /header -->
 </section>
 <script>
-ityped.init(document.querySelector("#ityped"), {
+ityped.init(document.querySelector("#ityped1"), {
+	typeSpeed: 35,
   showCursor: false,
 	disableBackTyping: true,
-  strings: [`Never say 'NO' to adventures. Always say 'YES,' otherwise you'll lead a very dull life.
- Ian Fleming`]
+  strings: [`Never say 'NO' to adventures. Always say 'YES,' otherwise you'll lead a very dull life.`]
 })
-ityped.init("#placeholder", {
-  placeholder: true,
-  showCursor: false
+ityped.init(document.querySelector("#ityped2"), {
+	typeSpeed: 40,
+  showCursor: false,
+	disableBackTyping: true,
+	startDelay: 4500,
+  strings: [`Ian Fleming`]
 })
 </script>
