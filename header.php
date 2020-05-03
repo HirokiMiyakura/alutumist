@@ -16,7 +16,7 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<?php wp_head(); ?>
-		<script src="https://unpkg.com/ityped@1.0.2"></script>
+		<!-- <script src="https://unpkg.com/ityped@1.0.2"></script> -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
 		<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/ripples.js"></script> -->
 	</head>
@@ -63,7 +63,7 @@
 								<a href="<?php echo home_url(); ?>#FOUNDERS">Founders<span>創業者</span></a>
 							</div>
 							<div class="mainNavigationItem contact">
-								<a href="<?php echo home_url(); ?>#CONTACT">Contact<span>いざない</span></a>
+								<a href="<?php echo home_url(); ?>#CONTACT">Contact<span>ご要望</span></a>
 							</div>
 						</div>
 					</nav>
@@ -90,7 +90,7 @@
 					<!-- /nav_sp -->
 
 					<div id="MESSAGE">
-						<div class="inner">
+						<!-- <div class="inner"> -->
 						<!-- <p class="centering"> -->
 							<!-- <img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/header/BG_mysterious.jpg" alt="" /> -->
 							<!-- <ul>
@@ -99,32 +99,38 @@
 								<li><img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/header/drink-04.png" alt="" /></li>
 							</ul> -->
 						<!-- </p> -->
-						<div data-aos="fade-down"
+						<!-- <div data-aos="fade-down"
 								 data-aos-anchor="#border-bottom"
 						     data-aos-easing="linear"
 						     data-aos-delay="600"
 								 data-aos-duration="2000"
 						     data-aos-offset="0">
-								 <!-- <p class="aka"><img src="<?php echo get_template_directory_uri(); ?>/img/header/drink-04.png" alt="" /></p> -->
-						</div>
-						<p class="ao"><img src="<?php echo get_template_directory_uri(); ?>/img/header/drink-03.png" alt="" /></p>
-						<div data-aos="fade-down"
+								 <p class="aka"><img src="<?php echo get_template_directory_uri(); ?>/img/header/drink-04.png" alt="" /></p>
+						</div> -->
+						<!-- <p class="ao"><img src="<?php echo get_template_directory_uri(); ?>/img/header/drink-03.png" alt="" /></p> -->
+						<!-- <div data-aos="fade-down"
 								 data-aos-anchor="#border-bottom"
 						     data-aos-easing="linear"
 						     data-aos-delay="200"
 								 data-aos-duration="2000"
 						     data-aos-offset="0">
-						<!-- <p class="kiiro"><img src="<?php echo get_template_directory_uri(); ?>/img/header/drink-02.png" alt="" /></p> -->
-					  </div>
-					</div>
-					<div id="border-bottom"></div>
+						<p class="kiiro"><img src="<?php echo get_template_directory_uri(); ?>/img/header/drink-02.png" alt="" /></p>
+					  </div> -->
+					<!-- </div>
+					<div id="border-bottom"></div> -->
 				</div>
-				<div class="ityped-outer">
+				<!-- <div class="ityped-outer">
 					<span id="ityped1" class="ityped"></span>
 				</div>
 				<div class="ityped-outer">
 					<span id="ityped2" class="ityped"></span>
 				</div>
+				<div class="ityped-outer">
+					<span id="ityped3" class="ityped"></span>
+				</div>
+				<div class="ityped-outer">
+					<span id="ityped4" class="ityped"></span>
+				</div> -->
 			</header>
 			<!-- /header -->
 </section>
@@ -133,13 +139,27 @@ ityped.init(document.querySelector("#ityped1"), {
 	typeSpeed: 35,
   showCursor: false,
 	disableBackTyping: true,
-  strings: [`Never say 'NO' to adventures. Always say 'YES,' otherwise you'll lead a very dull life.`]
+  strings: [`Never say 'NO' to adventures.`]
 })
 ityped.init(document.querySelector("#ityped2"), {
+	typeSpeed: 35,
+  showCursor: false,
+	disableBackTyping: true,
+	startDelay: 1800,
+  strings: [`Always say 'YES,' otherwise...`]
+})
+ityped.init(document.querySelector("#ityped3"), {
+	typeSpeed: 35,
+  showCursor: false,
+	disableBackTyping: true,
+	startDelay: 3200,
+  strings: [`you'll lead a very dull life.`]
+})
+ityped.init(document.querySelector("#ityped4"), {
 	typeSpeed: 40,
   showCursor: false,
 	disableBackTyping: true,
-	startDelay: 4500,
+	startDelay: 5000,
   strings: [`Ian Fleming`]
 })
 </script>

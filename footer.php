@@ -1,6 +1,6 @@
 <!-- footer -->
 <footer class="footer" role="contentinfo">
-
+<p class="uber"><a href="https://bit.ly/3aGuShA" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/common/UberEats-Logo-OnWhite-Color-V.png" alt="uber eats"></a></p>
 <!-- copyright -->
 <p class="copyright">
 &copy; 楽之者洋行</a>.
