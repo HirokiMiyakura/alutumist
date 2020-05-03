@@ -149,6 +149,7 @@ td {
 header {
 	/* background-color: #1d2b49; */
 	background: url('./img/header/BG_mysterious.jpg') no-repeat;
+	background: url('./img/header/Alutumist_syugo-min.jpg') no-repeat center center;
 	background-size: cover;
 	height: 100vh;
 	position: relative;
@@ -251,6 +252,10 @@ header {
 
 /* スマホメニュー */
 
+#wprmenu_menu_ul li:first-child {
+	margin-top: 3rem;
+}
+
 /* /スマホメニュー */
 
 section {
@@ -266,7 +271,7 @@ main {
 	max-width: 1080px;
 	margin: 0 auto;
 	/* padding: 3em 0; */
-	padding-top: 120px;
+	/* padding-top: 120px; */
 }
 
 section h2 {
@@ -448,6 +453,7 @@ section h2 span::before {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: nowrap;
+	/* flex-wrap: wrap; */
 	justify-content: space-around;
 	align-items: baseline;
 	margin: 0 auto;
@@ -455,11 +461,15 @@ section h2 span::before {
 
 .modelsItem {
 	width: 50%;
-	padding: 2em;
+	padding: 1em;
 }
 
 .model-image {
 	text-align: center;
+}
+
+.model-image > img {
+	width: 85%;
 }
 
 .modelsItem ul {
@@ -556,11 +566,21 @@ input.wpcf7-form-control.wpcf7-submit {
 	text-align: center;
 }
 
+.uber {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 15vw;
+	background-color: #fff;
+	border-radius: 0 2rem 0 0;
+	border: 1px solid navy;
+}
+
 .ityped-outer {
 	letter-spacing: 2px;
 	font-size: 2.75rem;
 	color: #a86f49;
-	padding-bottom: 1rem;
+	padding-bottom: .75rem;
 	/* position: absolute;
 	top: 0;
 	right: 0;
@@ -568,7 +588,15 @@ input.wpcf7-form-control.wpcf7-submit {
 	left: 0;
 	margin: auto; */
 	text-align: center;
-	font-family: 'italianno'
+	font-family: 'italianno';
+	position: relative;
+	z-index: 100;
+	top: 15vh;
+}
+
+#ityped4 {
+	font-size: 1.25rem;
+	font-family: serif;
 }
 
 .ityped-cursor {
@@ -605,6 +633,7 @@ input.wpcf7-form-control.wpcf7-submit {
 		/* padding: 1em .5em 2em .5em; */
 		padding: 0;
 		height: auto;
+		z-index: -100;
 	}
 
 	section h2 {
@@ -642,12 +671,12 @@ input.wpcf7-form-control.wpcf7-submit {
 	}
 
 	.foundersContainer {
-		/* display: block; */
+		display: block;
 	}
 
 	.founderItem {
-		/* width: 100%; */
-		width: 45%;
+		width: 100%;
+		/* width: 45%; */
 	}
 
 	.altumist-contact-table th,
@@ -679,19 +708,28 @@ input.wpcf7-form-control.wpcf7-submit {
 	header {
 		/* background: url('./img/header/drink_photo_3.jpg') no-repeat; */
 		background: url('./img/header/sp-mv.jpg') no-repeat;
-		/* background-size: contain; */
-		background-size: cover;
+		background: url('./img/header/Alutumist_syugo-min.jpg') no-repeat center center;
+		/* background-size: cover; */
+		background-size: contain;
 		background-position: center center;
 		/* padding-bottom: 30%; */
-		height: 100vh;
+		/* height: 100vh; */
 /*
 		height: auto;
 		background: none;
 		padding-bottom: 0; */
+		height: auto;
+		padding-bottom: 80%;
+	}
+
+	.logo-outer {
+		width: 100%;
+		position: fixed;
 	}
 
 	.logo {
-		width: 40vw;
+		/* width: 40vw; */
+		height: auto;
 	}
 
 	.ao,

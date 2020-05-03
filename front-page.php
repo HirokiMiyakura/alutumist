@@ -7,7 +7,7 @@
 			<div class="outer">
 				<div class="inner">
 					<h2>Service<span>概要</span></h2>
-					<h3 class="service-title centering">新鮮なスムージーの定額制配達サービス</h3>
+					<h3 class="service-title centering">Uber Eatsから始まる全く新しいスパイススムージー</h3>
 					<p class="centering">シルクロード交易や新大陸発見、月面着陸など、<br class="pc-br">
 					人類の歴史は未知なる世界に飛び込んだ人々によって築かれてきました<br class="pc-br">
 					今を生きる冒険家のためのスムージーをお届けします</p>
@@ -35,7 +35,7 @@
 
 						<div class="modelsItem">
 							<p class="model-image">
-								<img width="30%" src="<?php echo get_template_directory_uri(); ?>/img/models/nebula_c.png" alt="" />
+								<img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/models/Alutumist_nebula-min.jpg" alt="" />
 							</p>
 							<h3>Nebula</h3>
 							<p>星雲を思わせる赤紫色のスムージー。遥か彼方にきらめく星雲は古来人類のロマンの象徴として輝いています。その気分を味わってみては</p>
@@ -43,7 +43,7 @@
 
 						<div class="modelsItem">
 							<p class="model-image">
-								<img width="30%" src="<?php echo get_template_directory_uri(); ?>/img/models/ruri_c.png" alt="" />
+								<img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/models/Alutumist_ruri-min.jpg" alt="" />
 							</p>
 							<h3>Ruri</h3>
 							<p>古今東西の冒険家を魅了してきたオオルリアゲハをシンボルとするアルトゥミストの傑作スムージー、瑠璃。別名ラピスラズリ。古代エジプトでは金より貴重な存在と崇められ、仏教では七宝に数えられました</p>
@@ -51,10 +51,18 @@
 
 						<div class="modelsItem">
 							<p class="model-image">
-								<img width="30%" src="<?php echo get_template_directory_uri(); ?>/img/models/candor_c.png" alt="" />
+								<img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/models/Alutumist_candor-min.jpg" alt="" />
 							</p>
 							<h3>Candor</h3>
 							<p>淡く光る乳白色のスムージー、キャンダー。ラテン語「光り輝く」をルーツに持ち、日本語で率直さ。清々しい率直さは人を感嘆させます</p>
+						</div>
+
+						<div class="modelsItem">
+							<p class="model-image">
+								<img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/models/Alutumist_meadow-min.jpg" alt="" />
+							</p>
+							<h3>Meadow</h3>
+							<p>爽やかさが豊かに漂う緑色のスムージー。遥か彼方の地平線まで広がる草原は見るものに清涼感を与えてくれます。天然の素材だからこそ表現できる美しい緑を堪能してみてください</p>
 						</div>
 				</div>
 			</div>
@@ -94,7 +102,7 @@
 						</div>
 						<div class="founderItem">
 							<p class="founder-image">
-								<!-- <img src="<?php echo get_template_directory_uri(); ?>/img/founders/miyakura.jpg" alt="" /> -->
+								<img src="<?php echo get_template_directory_uri(); ?>/img/founders/meishi_miyakura.jpg" alt="" />
 							</p>
 							<h3>宮倉洋樹</h3>
 							<p>早稲田大学在学中に、株式会社Orfoolを創業。ウェブに関わる様々な事業を経験し、楽之者洋行にジョイン。</p>
@@ -110,8 +118,12 @@
 			<div class="outer">
 				<div class="inner">
 					<h2>Contact<span>いざない</span></h2>
-					<h4 class="centering">ただいま無料の試飲会を実施しております<br class="pc-br">ご希望の方はこちらのフォームよりお問い合わせください</h4>
-					<?php echo do_shortcode( '[contact-form-7 id="5" title="コンタクトフォーム 1"]' ); ?>
+					<!-- <h4 class="centering">製品アンケート</h4> -->
+					<?php echo do_shortcode( '[contact-form-7 id="19" title="ご感想・ご要望"]' ); ?>
+
+					<!-- <h4 class="centering">購入はUber Eatsにて</h4> -->
+					<!-- <p><a href="https://bit.ly/3aGuShA" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/common/UberEats-Logo-OnWhite-Color-V.png" alt="uber eats"></a></p>
+					<p class="centering"><a href="https://bit.ly/3aGuShA" target="_blank">Alutumistの全商品はUber Eatsにてお買い求めいただけます</a></p> -->
 				</div>
 			</div>
 		</section>
