@@ -33,11 +33,11 @@
 		<!-- nav -->
 		<nav class="nav" role="navigation">
 			<div class="mainNavigationContainer">
-				<div class="mainNavigationItem home">
-					<a href="<?php echo home_url(); ?>">Home<span>冒険の始まり</span></a>
-				</div>
 				<div class="mainNavigationItem service">
 					<a href="<?php echo home_url(); ?>#SERVICE">Service<span>概要</span></a>
+				</div>
+				<div class="mainNavigationItem news">
+					<a href="<?php echo home_url(); ?>#NEWS">News<span>軌跡</span></a>
 				</div>
 				<div class="mainNavigationItem models">
 					<a href="<?php echo home_url(); ?>#MODELS">Models<span>ラインナップ</span></a>

@@ -55,6 +55,7 @@ jQuery(function($){
 
 		$now_position = $(window).scrollTop()
 		$service_position = $('#SERVICE').offset()['top'] - 200
+		$news_position = $('#NEWS').offset()['top'] - 200
 		$models_position = $('#MODELS').offset()['top'] - 200
 		$story_position = $('#STORY').offset()['top'] - 200
 		$founders_position = $('#FOUNDERS').offset()['top'] - 200
@@ -66,9 +67,13 @@ jQuery(function($){
 				$(".mainNavigationItem a").css("color", "#fff")
 				$(".home > a").css("color", "gold")
 			}
-			else if((value > $service_position) && (value < $models_position)) {
+			else if((value > $service_position) && (value < $news_position)) {
 				$(".mainNavigationItem a").css("color", "#fff")
 			  $(".service > a").css("color", "gold")
+			}
+			else if((value > $news_position) && (value < $models_position)) {
+				$(".mainNavigationItem a").css("color", "#fff")
+			  $(".news > a").css("color", "gold")
 			}
 			else if((value > $models_position) && (value < $story_position)) {
 				$(".mainNavigationItem a").css("color", "#fff")

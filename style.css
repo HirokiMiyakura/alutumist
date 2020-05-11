@@ -127,10 +127,44 @@ td {
 	font-weight: bold;
 }
 
+.outerSingle {
+	/* box-shadow: 0 0 8px gray; */
+	padding: 4em 0;
+}
+
+article h1 {
+	padding: 0 0 1em 0;
+}
+
+.shadow {
+	/* box-shadow: 0 0 3px gray; */
+	padding: 2em 0;
+}
+
+.single-contaienr {
+	display: flex;
+}
+
+.single-item-side {
+	width: 27%;
+	margin-right: 5%;
+	color: #000;
+	padding: 10px;
+	/* box-shadow: 0 0 3px rgba(29,43,73, 1); */
+}
+
+.single-item-main {
+	width: 68%;
+}
+
 .under-border {
 	/* border-bottom: 2px solid #1d2b49; */
 	/* background:linear-gradient(transparent 70%, #1d2b49 0%); */
 	background:linear-gradient(transparent 70%, orange 0%);
+}
+
+.post-categories {
+	padding-left: 1em;
 }
 
 .centering {
@@ -146,7 +180,7 @@ td {
   padding-top: 120px;
 } */
 
-header {
+.header {
 	/* background-color: #1d2b49; */
 	background: url('./img/header/BG_mysterious.jpg') no-repeat;
 	background: url('./img/header/Alutumist_syugo-min.jpg') no-repeat center center;
@@ -155,6 +189,11 @@ header {
 	position: relative;
 	padding-bottom: 51%;
 
+}
+
+.headerSingle {
+	/* padding-bottom: 15%; */
+	height: 120px;
 }
 
 .logo-outer {
@@ -232,13 +271,14 @@ header {
 	line-height: 30px;
 	padding-top: .9em!important;
 	/* padding: .6em 0 .4em 0; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
 	background-color: rgba(29, 43, 73, 1)!important;
 	font-size: 1rem;
+	transition: all .5s ease-in;
 }
 
 .nav.is-fixed .mainNavigationItem {
@@ -400,6 +440,10 @@ section h2 span::before {
   flex-direction: column;
 }
 
+.contentSingle {
+	padding: 2em 0;
+}
+
 #SERVICE ul {
 	list-style-type: none;
 	margin-left: 0;
@@ -431,6 +475,21 @@ section h2 span::before {
 .featuresOuter {
 	/* width: 70vw; */
 	margin: 0 auto;
+}
+
+/* NEWS */
+
+#NEWS {
+	background-color: #000;
+	color: #fff;
+}
+
+.news-list {
+	list-style-type: none;
+}
+
+.news-list li a {
+	color: #fff;
 }
 
 /* MODELS */
@@ -698,14 +757,14 @@ input.wpcf7-form-control.wpcf7-submit {
 	}
 
 	.inner {
-		padding: 30px 10px;
+		padding: 30px 20px;
 	}
 
 	.centering {
 		text-align: left;
 	}
 
-	header {
+	.header {
 		/* background: url('./img/header/drink_photo_3.jpg') no-repeat; */
 		background: url('./img/header/sp-mv.jpg') no-repeat;
 		background: url('./img/header/Alutumist_syugo-min.jpg') no-repeat center center;
@@ -761,6 +820,10 @@ input.wpcf7-form-control.wpcf7-submit {
 
 	#SERVICE ul li {
 		text-align: left;
+	}
+
+	#NEWS h2 {
+		color: #fff;
 	}
 
 	.modelsItem {

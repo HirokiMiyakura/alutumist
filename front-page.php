@@ -26,6 +26,24 @@
 	</section>
 	<!-- /section -->
 
+	<section class="box" id="NEWS">
+		<div class="outer">
+			<div class="inner">
+			<h2>News<span>冒険の始まり</span></h2>
+			<ul class="news-list">
+			<?php if(have_posts()): ?>
+				<?php while(have_posts()): the_post(); ?>
+					<!-- 繰り返し処理する内容 -->
+					<li><a href="<?php the_permalink(); ?>"><?php the_date(); ?>　<?php the_title(); ?></a></li>
+				<?php endwhile; ?>
+			</ul>
+			<?php else: ?>
+				<!-- 投稿データが取得できない場合の処理 -->
+			<?php endif; ?>
+			</div>
+		</div>
+	</section>
+
 	<!-- section -->
 	<section class="box" id="MODELS">
 		<div class="outer">
